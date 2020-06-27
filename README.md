@@ -2,7 +2,7 @@
 Quick and dirty example of using Unity Barracuda v1.0 for inference using TensorFlow/Keras-created models
 using a custom made and trained CNN in Keras (TensorFlow v2.1 backend) on [Dogs vs. Cats dataset](https://www.kaggle.com/c/dogs-vs-cats). 
 
-[barracuda_inference.cs]() explains how to perform inference step-by-step
+[barracuda_inference.cs](https://github.com/the-promised-LAN/unity_barracuda_keras_example/blob/master/Assets/barracuda_inference.cs) explains how to perform inference step-by-step
 
 [If you're looking on how to convert Keras' *.h5* models to *.ONNX*, check out example at this repo](https://github.com/the-promised-LAN/keras_to_onnx_example).
 
@@ -19,9 +19,9 @@ There are two provided images, *cat2.png* and *dog2.png*, both 150x150 RGB image
 * Create a new 2D project in Unity/Unity Hub
 * Install Unity Barracuda v1.0 package (see link under Requirements)
 * Import all files in Assets folder into the project's assets (drag and drop)
-* Select *cat2* and *dog2* images in Project window inside Unity, and inside Inspector window, check *Read/Write Enabled* under Advanced
+* Select *cat2* and *dog2* images in Project window inside Unity, and inside Inspector window, check *Read/Write Enabled* under Advanced [(where to find it)](https://github.com/the-promised-LAN/unity_barracuda_keras_example/blob/master/import_rw.PNG).
 * Select Main Camera in the Hierarchy window, go to the Inspector window, click Add Component, and select *barracuda_inference* scritpt. 
-* In the same Inspector window (with Main Camera still selected under Hierarchy), drag and drop *cats_dog_small_2.onnx*, *dog2.png* into Sprite1, and *cat2.png* from Assets into Sprite2 attribute
+* In the same Inspector window (with Main Camera still selected under Hierarchy), drag and drop *cats_dog_small_2.onnx*, *dog2.png* into Sprite1, and *cat2.png* from Assets into Sprite2 attribute [(how it's supposed to look)](https://github.com/the-promised-LAN/unity_barracuda_keras_example/blob/master/import_att.PNG).
 * Press Run from within Unity, and observe output in the Console. Output is approx. 0 for cat photos, and
 approx. 1 for Dog photos.
 
