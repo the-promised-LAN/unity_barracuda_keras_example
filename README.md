@@ -1,4 +1,8 @@
-# unity_barracuda_keras_example
+![](https://img.shields.io/badge/python-3.7-blue.svg)
+![](https://img.shields.io/badge/tensorflow-2.1-orange.svg)
+![](https://img.shields.io/badge/barracuda-1.0-black.svg)
+
+# Unity Barracuda + Keras/TF2 Barebones Inference Example
 Quick and dirty example of using Unity Barracuda v1.0 for inference using TensorFlow/Keras-created models
 using a custom made and trained CNN in Keras (TensorFlow v2.1 backend) on [Dogs vs. Cats dataset](https://www.kaggle.com/c/dogs-vs-cats). 
 
